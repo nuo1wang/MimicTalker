@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>DiffListener</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">MimicTalker: A Multimodal Interactive and Memory-Enhanced Framework for Real-Time Dyadic 3D Head Generation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="mailto:wangyinuo@stu.xjtu.edu" target="_blank">Yinuo Wang</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://sites.google.com/site/yanbofan0124/" target="_blank">Yanbo Fan</a><sup>2,*</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://xuanwangvc.github.io/" target="_blank">Xuan Wang</a><sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://yaourtb.github.io/" target="_blank">Boyao Zhou</a><sup>3</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://yuguo-xjtu.github.io/" target="_blank">Yu Guo</a><sup>1,*</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://shenyujun.github.io/" target="_blank">Yujun Shen</a><sup>3</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="mailto:wfx@xjtu.edu.cn" target="_blank">Fei Wang</a><sup>1</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1 </sup>Xi'an Jiaotong University, <sup>2 </sup>Nanjing University, <sup>3 </sup>Ant Group<br>CVPR 2026</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Authors</small></span>
+                  </div>
+                  
+
+                  <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Dyadic interactive head generation aims to synthesize realistic head motions that respond both verbally and non-verbally to an interlocutor in real-time conversation. The existing works often focus on offline scenarios, and struggle with a shallow understanding of the multimodal conversational context while also lacking long-term coherence. To address these limitations, we propose MimicTalker, a novel method for producing real-time, contextually-aware, and long-term consistent interactive head motions. To this end, we propose a Multimodal Interactive Context Extraction (MICE) module to capture both instantaneous and long-term multimodal interactive information from the interlocutor. To enhance in-depth conversational understanding, we propose a Semantic-enhanced Dynamic Interaction (SDI) module to integrate the intentions and topics of the conversation, which are automatically extracted through an LLM-based analyzer. Further, we propose a semantic-guided Motion Style Memory (MSM) mechanism, enabling the long-term motion consistency throughout the conversation. We conduct experiments on both short conversational segments (25 seconds) and extended dialogues (6 minutes), and the comprehensive experiments demonstrate that our method significantly outperforms existing approaches.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Pipeline-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Overview</h2>
+      <img src="static/images/pipeline.png" alt="MY ALT TEXT"/>
+      <div class="content has-text-justified">
+      <p>
+        Overview of MimicTalker. Incorporating in-depth semantics of the conversation, the framework dynamically interacts with interlocutor's multimodal features and generates realistic and vivid head motions in real time. The key components are (a) Multimodal Interactive Context Extraction, (b) Semantics-Enhanced Dynamic Interaction, (c) Semantic-Guided Motion Style Memory, and (d) Automatic Semantics Analyzer.
+      </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End pipeline -->
+
+
+
+<!-- Video carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Generated Videos (Coming Soon)</h2>
+
+      <!-- <style>
+        .video-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-item column {
+            width: 48%; /* 各占一半，留下一些间隔 */
+            object-fit: cover; /* 保持图片纵横比 */
+            margin: 0 10px;
+        }
+
+
+        .item-gif-container {
+            width: 48%; /* 占据父元素的80%宽度 */
+            margin: auto; /* 水平方向上创建相同的空白 */
+        }
+    </style>
+
+    <style>
+        .video-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            /*margin: 0 10px;*/
+            width: 100%;
+        }
+
+        .description {
+            font-size: 1.2em;
+            text-align: justify;
+        }
+
+        .content-description {
+            margin-top: 10px; /* Add some space above the description */
+        }
+    </style>
+    <style>
+        .caption {
+            margin-top: 8px; /* Space between the video and its caption */
+        }
+    </style>
+
+      <div id="results-carousel" class="carousel results-carousel">
+
+
+
+    <div class="video-item">
+      <div class="column">
+          <video class="video-player" poster="" id="tree2" controls>
+              <source src="static/videos/NqPyUVxupzk_00022_crop01.mp4" type="video/mp4">
+          </video>
+      </div>
+      <div class="column">
+          <video class="video-player" poster="" id="tree2" controls>
+              <source src="static/videos/L6V-EAWLOc0_00012_crop00.mp4" type="video/mp4">
+          </video>
+          </p>
+      </div>
+  </div>
+
+
+<div class="video-item">
+  <div class="column">
+      <video class="video-player" poster="" id="tree2" controls>
+          <source src="static/videos/GbI73-A-BMQ_00014_crop00.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="column">
+      <video class="video-player" poster="" id="tree2" controls>
+          <source src="static/videos/KOh8fZK4-G4_00014_crop00.mp4" type="video/mp4">
+      </video>
+      </p>
+  </div>
+</div>
+
+
+<div class="video-item">
+  <div class="column">
+      <video class="video-player" poster="" id="tree2" controls>
+          <source src="static/videos/EMVL3jo83OQ_00013_crop00.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="column">
+      <video class="video-player" poster="" id="tree2" controls>
+          <source src="static/videos/3BRArY48ZEM_00022_crop00.mp4" type="video/mp4">
+      </video>
+      </p>
+  </div>
+</div>
+
+
+<div class="video-item">
+  <div class="column">
+      <video class="video-player" poster="" id="tree2" controls>
+          <source src="static/videos/cDXtKSnAEQs_00014_crop00.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="column">
+      <video class="video-player" poster="" id="tree2" controls>
+          <source src="static/videos/D8K1AAxkg0g_00043_crop00.mp4" type="video/mp4">
+      </video>
+      </p>
+  </div>
+</div>
+
+
+<div class="video-item">
+  <div class="column">
+      <video class="video-player" poster="" id="tree2" controls>
+          <source src="static/videos/EMVL3jo83OQ_00015_crop00.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="column">
+      <video class="video-player" poster="" id="tree2" controls>
+          <source src="static/videos/KOh8fZK4-G4_00008_crop00.mp4" type="video/mp4">
+      </video>
+      </p>
+  </div>
+</div>
+
+
+
+<div class="video-item">
+  <div class="column">
+      <video class="video-player" poster="" id="tree2" controls>
+          <source src="static/videos/b79oykwdXYk_00012_crop00.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="column">
+      <video class="video-player" poster="" id="tree2" controls>
+          <source src="static/videos/Ak2Bm8mfL3w_00012_crop00.mp4" type="video/mp4">
+      </video>
+      </p>
+  </div>
+</div> -->
+
+
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+<!-- Youtube video -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3 has-text-centered">Video Presentation (Coming Soon)</h2>
+      <!-- <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/v0pq9YqmAjw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title has-text-centered">BibTeX (Coming Soon)</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
